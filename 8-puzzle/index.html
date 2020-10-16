@@ -1,0 +1,152 @@
+<html>
+  <script src="scripts/generate.js" defer></script>
+  <script src="scripts/game.js" defer></script>
+  <script src="scripts/timer.js" defer></script>
+
+  <head>
+    <meta charset="utf-8">
+    <title>web-ex2</title>
+    <!-- 引用jQuery -->
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link href="styles/style.css" rel="stylesheet">
+    <link href="https://fonts.font.im/css?family=Open+Sans" rel="stylesheet" type="text/css"> 
+  </head>
+
+  <body>
+    <h1>DxxX</h1>
+
+    <h2>8-puzzle</h2>
+
+    <h3><strong>Declaration</strong></h3>
+    
+    <ul> 
+      <li>There are eight squares and one empty space in the Jiugongge. You have to move the squares so that the numbers of the squares are arranged from small to large.</li>
+  
+      <li>Drag the cell.</li>
+    </ul>
+
+    <div class="container" name="container">
+      <div class="cell" draggable="true" name="cell">1</div>
+      <div class="cell" draggable="true" name="cell">2</div>
+      <div class="cell" draggable="true" name="cell">3</div>
+      <div class="cell" draggable="true" name="cell">4</div>
+      <div class="cell" draggable="true" name="cell">5</div>
+      <div class="cell" draggable="true" name="cell">6</div>
+      <div class="cell" draggable="true" name="cell">7</div>
+      <div class="cell" draggable="true" name="cell">8</div>
+      <div class="cell" draggable="true" name="cell">9</div>
+    </div>
+
+
+    <div class="buts">
+      <div class="clock-buttons">
+        <button type="button" class="clock-button" data-role="clock-reset">
+          <span class="clock-button__text">Reset</span>
+        </button>
+    
+        <button type="button" class="clock-button clock-button--start" data-role="clock-start-stop">
+          <span class="clock-button__text">Pause</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="clock-wrapper">
+      <div class="clock">
+        <div class="clock__inner-bg"></div>
+    
+        <div class="clock__inner-bg">
+          <div class="clock__markers">
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+            <div class="clock__mark"></div>
+          </div>
+        </div>
+    
+        <div class="clock__center"></div>
+    
+        <div class="clock__inners">
+          <div class="clock__inner-center"></div>
+          <div class="clock__inner-center"></div>
+          <div class="clock__inner-center"></div>
+        </div>
+    
+        <div class="clock__pointer"></div>
+    
+        <svg class="svg" xmlns="http://www.w3.org/2000/svg">
+          <!-- Created with Method Draw - https://github.com/duopixel/Method-Draw/ -->
+          <defs>
+            <radialGradient gradientTransform="translate(1,0.5) scale(-0.99,1)" r="1.200581" cy="0" cx="0" spreadMethod="pad" id="svg_9">
+              <stop offset="0" stop-opacity="0.996094" stop-color="#ff415a"/>
+              <stop offset="1" stop-opacity="0" stop-color="#252525"/>
+            </radialGradient>
+          </defs>
+          <g>
+            <title>Layer 1</title>
+            <ellipse stroke="url(#svg_9)" ry="21.5%" rx="21.5%" id="svg_1" cy="50%" cx="50%" stroke-width="12%" fill="transparent"/>
+          </g>
+        </svg>
+      </div>
+    
+      <span class="clock-time">00:00,000</span>
+
+    </div>
+
+  </body>
+</html>

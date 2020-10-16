@@ -1,0 +1,126 @@
+html {
+    font-size: 10px; 
+    /* Google fonts 输出的 CSS */
+    font-family: 'Open Sans', sans-serif; 
+    background-color: #00539F;
+}
+
+body {
+    width: 600px;
+    margin: 0 auto;
+    background-color: #FF9500;
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+}
+
+h1{
+    font-size: 60px;
+    color: darkslategray;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;    
+    color: #00539F;
+    text-shadow: 3px 3px 1px black;
+}
+
+p, li {
+    font-size: 16px;  
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+.imageList{
+    /* 横向滑动 */
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    height:180px;
+    white-space: nowrap;
+}
+
+/*滚动条样式*/
+.imageList::-webkit-scrollbar {   
+    height: 4px;
+}
+.imageList::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.2);
+}
+.imageList::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 0;
+    background: rgba(0,0,0,0.1);
+
+}
+
+.imageList img{
+    width:auto;
+    /* height:90%; */
+    margin-right:6px;
+    margin-top: 20px;
+}
+
+
+
+.bigger{
+    height:80%;
+
+    /* 放大中心点 */
+    transform-origin: center center;
+    transition-duration: 0.1s;
+}
+
+.bigger:hover{
+    /* 放大倍率 */
+    transform: scale(1.05, 1.05);
+}
+
+
+.backShow{
+    width:100%;
+    height:100%;
+    background-color:#000;
+
+    /* 兼容性设置 */
+    filter:alpha(opacity=50);
+    -moz-opacity:0.5;
+    opacity:0.5;
+
+    position:absolute;
+    left:0px;
+    top:0px;
+
+    /* 初始不可见 */
+    display:none;
+
+    /* absolute下的叠层参数 */
+    z-index:1;
+}
+
+/* .bottom{
+
+} */
+
+.displayImage{
+    position:absolute;
+    display: none;
+
+    /* absolute下的叠层参数，在back层上面*/
+    z-index: 2;
+
+    /* 不知道div的宽高前提下，设置居中 */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.displayImage img{
+    display: block;
+    margin: 0 auto;
+}
+
+/* 隐藏滚动条 */
+/* ::-webkit-scrollbar{
+    display: none;
+}  */
